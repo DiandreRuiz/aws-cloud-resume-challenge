@@ -6,6 +6,16 @@
 //
 // Scripts
 //
+const counter = document.querySelector(".counter-number");
+async function updateCounter() {
+  let response = await fetch(
+    "https://i2a3w4xtkattxzptz2xlxcbk2a0skptb.lambda-url.us-east-1.on.aws/"
+  );
+  let data = await response.json();
+  counter.innerHTML = ` Page Views: ${data}`;
+}
+
+updateCounter();
 
 window.addEventListener("DOMContentLoaded", (event) => {
   // Activate Bootstrap scrollspy on the main nav element
@@ -30,14 +40,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
-
-const counter = document.querySelector(".counter-number");
-async function updateCounter() {
-  let response = await fetch(
-    "https://i2a3w4xtkattxzptz2xlxcbk2a0skptb.lambda-url.us-east-1.on.aws/"
-  );
-  let data = await response.json();
-  counter.innerHTML = ` Page Views: ${data}`;
-}
-
-updateCounter();
