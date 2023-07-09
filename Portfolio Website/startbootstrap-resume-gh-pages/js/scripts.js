@@ -1,4 +1,3 @@
-
 // Scripts
 
 const counter = document.querySelector(".counter-number");
