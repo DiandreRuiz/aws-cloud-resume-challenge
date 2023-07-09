@@ -33,6 +33,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Projects</a></li> This is where the sidebar "Projects" button and text lives-->
                 </ul>
@@ -46,7 +47,7 @@
                     <h1 class="mb-0">
                         Diandre
                         <span class="text-primary">Ruiz</span>
-                        <a href="https://www.credly.com/badges/ff595292-6feb-4ca2-8546-05b8f5689894/public_url"><img src="assets/img/CCP_cert.png" height="120"><img src="assets/img/SAA_cert.png" height="120"></a>
+                        <a target="blank" href="https://www.credly.com/badges/ff595292-6feb-4ca2-8546-05b8f5689894/public_url"><img src="assets/img/CCP_cert.png" height="120"><img src="assets/img/SAA_cert.png" height="120"></a>
                     </h1>
                     <div class="subheading mb-5">
                         Mounds View · MN 55112 · (215) 915-1004 ·
@@ -55,7 +56,7 @@
                     <p class="lead mb-5">Welcome to my page! My name is Diandre, I am a Software Developer and perpetual student of technology.<br>
                     <span><strong></strong></span> </p>
 
-                    <!--Runs JS scripts deliberately-->
+                   
                     
                     <div class="counter-number lead mb-5">Calculating Page Views...</div>
                     
@@ -75,8 +76,8 @@
             <section class="resume-section" id="this-website">
                 <div class="resume-section-content">
                     <h2 class="mb-5">This Website's Architecture</h2>
-                    <p>This website is currently hosted securely via HTTPS thanks to AWS's global CloudFront distribution system! Security is handled via W.A.F. at the CloudFront level as well as HTTPS redirection at the S3 bucket level. The architecture can be seen below: <br></p>
-                    <img id="architecture" src="assets/img/website-architecture-w-shadow.jpeg" height="800">
+                    <p>This website is currently hosted securely via HTTPS thanks to AWS's global CloudFront distribution system! Security is handled via W.A.F. and the live user count is stored in DynamoDB (Updated and returned by a Lambda function): <br></p>
+                    <img id="architecture" src="assets/img/website-architecture-w-shadow.jpeg" height="400">
                 </div>
             </section>
 
@@ -163,13 +164,13 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2> <p>My focus is on Cloud & DevOps technologies. I currently hold both foundational AWS certifications (CCP & SAA) and plan to have my AWS SysOps & Developer certifications soon as well!</p>
+                    <h2 class="mb-5">Skills</h2> <p></p>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+                        <!-- <li class="list-inline-item"><i class="fab fa-docker"></i></li> -->
                         <li class="list-inline-item"><i class="fab fa-aws"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-jenkins"></i></li>
+                        <!-- <li class="list-inline-item"><i class="fab fa-jenkins"></i></li> -->
                         <li class="list-inline-item"><i class="fab fa-html5"></i></li>
                         <li class="list-inline-item"><i class="fab fa-css3"></i></li>
                         <li class="list-inline-item"><img src="assets/img/CCP_cert.png" height="75"><img src="assets/img/SAA_cert.png" height="75"></li>
@@ -182,17 +183,13 @@
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             Python
                         </li>
-                        <li>
+                        <!-- <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             Docker
-                        </li>
+                        </li> -->
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             Amazon Web Services
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Jenkins
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -212,6 +209,30 @@
                 </div>
             </section>
             <hr class="m-0" />
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Personal Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <!--<div>Computer Science - Web Development Track</div>-->
+                            <h3 class="mb-2">Cloud Resume Challenge (This website) <a target="blank" href="https://github.com/DiandreRuiz/aws-cloud-resume-challenge">Link to Github</a></h3>
+                            <div class="mb-2"> Full stack, AWS hosted, serverless web application that leverages AWS services such as:<!--<br>3 years completed (left for Bandlez touring)--></div>
+                            <ul class="mb-0">
+                                <li>CloudFront</li>
+                                <li>Lambda</li>
+                                <li>DynamoDB</li>
+                                <li>Web Application Firewall</li>
+                                <li>S3</li>
+                                <li>Route53</li>
+                            </ul>
+                            <!--<div>Computer Science - Web Development Track</div>-->
+                            <!-- <p>GPA: 3.23</p> -->
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">August 2016 - June 2019</span></div> -->
+                    </div>
+                    
+                </div>
+            </section>
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
