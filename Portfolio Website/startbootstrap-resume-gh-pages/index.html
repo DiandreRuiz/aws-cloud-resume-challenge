@@ -28,12 +28,14 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
                     <!--'this website' in navbar-->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#this-website">This Website</a></li>
+                    
 
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#this-website">This Website</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Projects</a></li> This is where the sidebar "Projects" button and text lives-->
                 </ul>
@@ -64,24 +66,14 @@
                    
 
                     <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/diandre-ruiz/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/diandre-ruiz/"><i class="fab fa-linkedin-in"></i></a>
                          <!--<a class="social-icon" href="#!"><i class="fab fa-github"></i></a>-->
-                        <a class="social-icon" href="https://twitter.com/bandlez"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="https://www.facebook.com/diandre.ruiz"><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-icon" href="https://www.instagram.com/ruizdiandre/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a class="social-icon" target="_blank" href="https://twitter.com/bandlez"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" target="_blank" href="https://www.facebook.com/diandre.ruiz"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" target="_blank" href="https://www.instagram.com/ruizdiandre/?hl=en"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </section>
-
-            <section class="resume-section" id="this-website">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">This Website's Architecture</h2>
-                    <p>This website is currently hosted securely via HTTPS thanks to AWS's global CloudFront distribution system! Security is handled via W.A.F. and the live user count is stored in DynamoDB (Updated and returned by a Lambda function): <br></p>
-                    <img id="architecture" src="assets/img/website-architecture.jpeg" height="400">
-                </div>
-            </section>
-
-            
             <hr class="m-0" />
             <!-- Experience-->
             <section class="resume-section" id="experience">
@@ -89,17 +81,19 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Cloud / Product Management</h3>
+                            <h3 class="mb-0">Cloud Data Management</h3>
                             <div class="subheading mb-3">Soundry AI - Seattle WA (Remote)</div>
                             <p>Designing and implementing data pre-processing pipeline (ETL Pipeline) for audio samples to create and store training data.</p>
+                            <p class="mb-1"><strong>Skills Used: </strong>Python w/ Librosa · Git Technologies · S3 · DynamoDB · CICD Design</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2022 - Present</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Sample Pack Engineer</h3>
+                            <h3 class="mb-0">Audio Engineer</h3>
                             <div class="subheading mb-3">Splice - Los Angeles CA</div>
                             <p>Design and engineer audio sample packs; Optimize sample indexing & naming conventions for sample warehousing and integration with Splice's search technology</p>
+                            <p class="mb-1"><strong>Skills Used: </strong>Ableton Live · Subtractive Synthesis · AGILE</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2017 - Present (Ad Hoc Contract)</span></div>
                     </div>
@@ -129,6 +123,10 @@
                 </div>
             </section>
             <hr class="m-0" />
+            
+
+            
+            
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
@@ -170,11 +168,12 @@
                         <li class="list-inline-item"><i class="fab fa-python"></i></li>
                         <!-- <li class="list-inline-item"><i class="fab fa-docker"></i></li> -->
                         <li class="list-inline-item"><i class="fab fa-aws"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
                         <!-- <li class="list-inline-item"><i class="fab fa-jenkins"></i></li> -->
                         <li class="list-inline-item"><i class="fab fa-html5"></i></li>
                         <li class="list-inline-item"><i class="fab fa-css3"></i></li>
                         <li class="list-inline-item"><img src="assets/img/CCP_cert.png" height="75"><img src="assets/img/SAA_cert.png" height="75"></li>
-                        <!-- <li class="list-inline-item"><i class="fab fa-terr"></i></li> -->
+
                        
                     </ul>
                     
@@ -190,6 +189,14 @@
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             Amazon Web Services
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            CICD Pipelines
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Git Technologies
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -234,6 +241,13 @@
                 </div>
             </section>
             <!-- Interests-->
+            <section class="resume-section" id="this-website">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">This Website's Architecture</h2>
+                    <p>This website is currently hosted securely via HTTPS thanks to AWS's global CloudFront distribution system! Security is handled via W.A.F. and the live user count is stored in DynamoDB (Updated and returned by a Lambda function): <br></p>
+                    <img id="architecture" src="assets/img/website-architecture.jpeg" height="400">
+                </div>
+            </section>
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
